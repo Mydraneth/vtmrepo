@@ -49,7 +49,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <h2>Clans</h2>
           <ul>
             {clans.map((clan: any) => (
-              <li key={clan.id}>{clan.name}</li>
+              <li key={clan.id}><h1>{clan.name}</h1><br/>{clan.description} </li>
             ))}
           </ul>
         </aside>
