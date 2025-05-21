@@ -38,22 +38,36 @@ export const metadata: Metadata = {
 //   );
 // }
 // src/app/layout.tsx
-export default async function RootLayout({ children }: { children: React.ReactNode }) {
-  const res = await fetch('http://localhost:3000/api/clans/test', { cache: 'no-store' });
-  const clans = await res.json();
 
-  return (
+
+
+// export default async function RootLayout({ children }: { children: React.ReactNode }) {
+//   const res = await fetch('http://localhost:3000/api/clans/test', { cache: 'no-store' });
+//   const clans = await res.json();
+
+//   return (
+//     <html lang="en">
+//       <body>
+//         <aside>
+//           <h2>Clans</h2>
+//           <ul>
+//             {clans.map((clan: any) => (
+//               <li key={clan.id}><h1>{clan.name}</h1><br/>{clan.description} </li>
+//             ))}
+//           </ul>
+//         </aside>
+//         {children}
+//       </body>
+//     </html>
+//   );
+// }
+
+
+export default async function RootLayout({children} : { children: React.ReactNode }) {
+  return(
     <html lang="en">
       <body>
-        <aside>
-          <h2>Clans</h2>
-          <ul>
-            {clans.map((clan: any) => (
-              <li key={clan.id}><h1>{clan.name}</h1><br/>{clan.description} </li>
-            ))}
-          </ul>
-        </aside>
-        {children}
+        <h3>SENİ ÇOK SEVİYORUM BÜŞRA</h3>
       </body>
     </html>
   );
