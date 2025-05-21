@@ -68,6 +68,7 @@ export default async function RootLayout({children} : { children: React.ReactNod
     <html lang="en">
       <body>
         <h3>SENİ ÇOK SEVİYORUM BÜŞRA</h3>
+        <h2>Hem de çooook çok seviyorum</h2>
       </body>
     </html>
   );
