@@ -71,7 +71,7 @@ export default async function RootLayout({children} : { children: React.ReactNod
         <h2>Hem de çooook çok seviyorum</h2>
         <h1>AŞKUM</h1>
         <br />
-        <p>Bütün gün bunla uğraştım kafamı kaldırmadım ya <br />sabah geldiğimden beri öğle arası hariç hiç molaya çıkmadım</p>
+        <p></p>
       </body>
     </html>
   );
