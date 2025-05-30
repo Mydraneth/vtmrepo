@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  //output   = "node_modules/@prisma/client"
 }
 
 datasource db {
@@ -15,7 +14,7 @@ model advantages {
   description          String
   type                 type
   level                Int
-  for                  forWhom
+  for_whom             forWhom
   clan_req             String?                @db.Uuid
   sect_req             String?                @db.Uuid
   clans                clans?                 @relation(fields: [clan_req], references: [id], onUpdate: NoAction, map: "advantages_clan_req_clans_id_fk")
